@@ -1,0 +1,18 @@
+div, footer {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    
+}
+
+#welcome {
+    min-height: 100vh;
+}
+
+#bio {
+    min-height: 90vh;
+}
+
+footer {
+    min-height: 10vh;
+}
