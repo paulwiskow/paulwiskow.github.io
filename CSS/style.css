@@ -1,4 +1,8 @@
-div, footer {
+body {
+    margin: 0;
+}
+
+#welcome, footer {
     display: grid;
     place-items: center;
     align-content: center;
@@ -7,6 +11,7 @@ div, footer {
 
 #welcome {
     min-height: 100vh;
+    /* background-image: linear-gradient(to bottom right,rgba(204, 43, 94, 1), rgba(117, 58, 136, 1)) */
 }
 
 #bio {
@@ -15,4 +20,24 @@ div, footer {
 
 footer {
     min-height: 10vh;
+    background-color: blue;
+}
+
+img {
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 7%
+}
+
+#desc {
+    display: inline-block;
+    margin-top: 8%;
+    margin-left: 5%;
+    font-family: 'Lato';
+    font-size: 125%;
+    line-height: 175%;
+    text-align: center;
+
 }
