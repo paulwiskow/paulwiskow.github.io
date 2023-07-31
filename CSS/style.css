@@ -16,7 +16,18 @@ body {
 
 footer {
     min-height: 7vh;
-    background-color: blue;
+    background-color: rgba(183, 183, 183, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-icon {
+    color: black;
+}
+
+.icons {
+    padding: .5vw;
 }
 
 #bio {
