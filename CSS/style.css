@@ -14,30 +14,29 @@ body {
     /* background-image: linear-gradient(to bottom right,rgba(204, 43, 94, 1), rgba(117, 58, 136, 1)) */
 }
 
-#bio {
-    min-height: 90vh;
-}
-
 footer {
-    min-height: 10vh;
+    min-height: 7vh;
     background-color: blue;
 }
 
+#bio {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img {
-    width: 25%;
-    height: 100%;
-    float: right;
-    margin-right: 5%;
-    margin-top: 7%
+    width: 30%;
+    height: 105%;
+    padding: 2%;
 }
 
 #desc {
     display: inline-block;
-    margin-top: 8%;
-    margin-left: 5%;
     font-family: 'Lato';
-    font-size: 125%;
-    line-height: 175%;
+    font-size: 1.2vw;
+    line-height: 200%;
     text-align: center;
-
+    padding: 5%;
 }
