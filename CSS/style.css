@@ -1,5 +1,20 @@
 body {
     margin: 0;
+    background: linear-gradient(-45deg, #ee9c83, #e888ad, #7ac7e3, #6feccf);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #welcome, footer {
@@ -11,8 +26,62 @@ body {
 
 #welcome {
     min-height: 100vh;
+    font-family: 'Roboto';
     /* background-image: linear-gradient(to bottom right,rgba(204, 43, 94, 1), rgba(117, 58, 136, 1)) */
 }
+
+#title {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+}
+
+#hide {
+    height: 2em;
+    width: 12vw;
+    overflow: hidden;
+    border-style: dotted;
+}
+
+#name {
+    font-size: 1.5vw;
+    animation-name: titleflip;
+    animation: titleflip 6s ease-in-out infinite;
+    padding-inline-start: 0;
+    
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    height: 1em;
+    padding-top: .75em;
+}
+
+@-webkit-keyframes titleflip {
+    0%, 20% {
+    transform: translate(0px, -8.85em);
+    }
+    20%,
+    40% {
+   transform: translate(0px, -7em);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate(0px, -5.4em);
+    }
+    60%,
+    80% {
+    transform: translate(0px, -3.7em);
+    }
+    80%,
+    100% {
+    transform: translate(0px, -1.75em);
+    }
+    100%,
+    0% {
+      transform: translate(0px, -8.85em);
+    }
+  }
 
 footer {
     min-height: 7vh;
